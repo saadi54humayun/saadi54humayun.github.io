@@ -1,123 +1,220 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+repository: saadi54humayun/saadi54humayun.github.io
+# favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
-# email_title: Email (Email title override)
-phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
+name: Saadi Humayun
+title: CS Graduate | AI/ML Engineer | Software Engineer
+email: saadihumayun64@gmail.com
+phone: "+92 306 0363663"
+# website: https://saadihumayun.netlify.app
+# website_title: 3D Portfolio
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
+github_username: saadi54humayun
+linkedin_username: saadi54humayun
 
 # Additional icon links
 additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+- title: 3D Interactive Portfolio
+  icon: fas fa-globe
+  url: https://saadihumayun.netlify.app
 
 # About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+about_profile_image: images/profile.jpg
+about_content: |
+  I'm a final-year Computer Science student at **Lahore University of Management Sciences**, graduating May 2026,
+  with a strong interest in the intersection of **Software Engineering and AI technologies**, particularly AI integration,
+  intelligent automation, and research in emerging **Deep Learning and Generative AI** systems.
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  I've built production-grade AI systems, contributed to deep learning research with Erasmus MC, and currently work
+  as a Software Engineering Intern at **10Pearls**, building and testing full-stack web applications.
+  I'm actively seeking roles where I can push the boundary between robust software and cutting-edge AI.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        border: weak
+        title: RAG Pipeline Evaluator
+        link: https://github.com/danyaalsadiq/RAG-Pipeline-Evaluator-Code
+        link_text: GitHub
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title: RAG Pipeline Evaluator
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: https://github.com/danyaalsadiq/RAG-Pipeline-Evaluator-Code
         quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          End-to-end RAG evaluation platform with dual LLM judges, deployed on Oracle Cloud.
+        description: |
+          Built and deployed an end-to-end RAG evaluation platform using dual LLM judges (Gemini + Groq/Llama)
+          supporting A/B testing between RAG pipelines across **faithfulness, retrieval, and generation metrics**.
+          Engineered a retrieval evaluation module with query expansion (10–15 variations per query), LLM-as-a-judge
+          ground truth building, and metrics including Precision@K, Recall@K, and signal-to-noise ratio.
+          Implemented generation quality scoring tracking faithfulness, hallucination, inferred, and extrapolated
+          claim rates with full precision/recall/F1 breakdown and per-run LLM cost estimation.
+
+          *Tech Stack: Python, LangChain, Gemini API, Groq API, Llama, pytest, Playwright, Oracle Cloud*
+
+      - layout: left
+        border: weak
+        title: Advanced Language Model Development and Optimization
+        additional_links:
+          - title: SmolLM — LoRA + DPO Fine-tuning
+            icon: fab fa-github
+            url: https://github.com/saadi54humayun
+        quote: >
+          Llama3-based LLM built from scratch with LoRA fine-tuning and Direct Preference Optimization.
+        description: |
+          Developed **SmolLM**, a Llama3-based language model from scratch including core architectural components —
+          RMS Normalization, RoPE, GQA, and SwiGLU networks. Reduced trainable parameters to under 1% using
+          **LoRA fine-tuning**. Achieved a 25% improvement in human preference alignment scores through
+          **Direct Preference Optimization (DPO)**. Reduced model storage requirements via a weight-sharing scheme
+          in the language modeling head.
+
+          *Tech Stack: Python, PyTorch, Llama3, LoRA, DPO, Hugging Face*
+
+      - layout: left
+        border: weak
+        title: Fine-grained Deer Species Classification
+        additional_links:
+          - title: Deer Species Classification
+            icon: fab fa-github
+            url: https://github.com/saadi54humayun
+        quote: >
+          Deep learning pipeline for fine-grained wildlife classification achieving 95% test accuracy.
+        description: |
+          Developed a deep learning pipeline for fine-grained deer species classification from the **Missouri Camera Trap
+          dataset (LILA BC)**, achieving **95% test accuracy** — outperforming the ResNet50 baseline by 3%.
+          Used **MegaDetector** for automated animal detection and image cropping, reducing data processing time by 60%.
+          Improved performance on underrepresented species by 15% through **Focal Loss** for class imbalance handling
+          and a stacking ensemble classifier combining MLP and XGBoost with CLIP features.
+
+          *Tech Stack: Python, PyTorch, CLIP, XGBoost, OpenCV, MegaDetector*
+
+      - layout: left
+        border: weak
+        title: CulinaryCloud — Full-Stack Recipe Platform
+        additional_links:
+          - title: CulinaryCloud
+            icon: fab fa-github
+            url: https://github.com/saadi54humayun
+        quote: >
+          MERN-stack recipe sharing platform with AI-driven recommendations and real-time features.
+        description: |
+          Developed a full-stack recipe sharing platform with **AI-driven personalized recommendations** and
+          nutritional analysis API integration, reducing manual calorie tracking time for users.
+          Built with real-time capabilities using **Socket.IO** and achieved broad test coverage through an
+          automated **Selenium** testing suite covering 50+ test cases.
+
+          *Tech Stack: MongoDB, Express.js, React, Node.js, Socket.IO, Selenium*
+
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
+        title: 10Pearls
+        sub_title: Software Engineering Intern
+        caption: March 2025 – Present
+        link: https://10pearls.com
         quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
+          Global software engineering company headquartered in Washington DC with a strong presence in Pakistan.
+        description: |
+          Working remotely as a Software Engineering Intern on a **MERN stack** web application for secure,
+          feature-rich note-taking. Responsibilities include building and integrating full-stack features,
+          writing thorough test coverage, and maintaining code quality standards using **SonarQube** for
+          static analysis and security scanning.
+
+          *Tech Stack: MongoDB, Express.js, React, Node.js, SonarQube*
+
+      - layout: right
+        title: Erasmus MC × LUMS
+        sub_title: Deep Learning Research Intern
+        caption: Summer 2024
+        quote: >
+          Research collaboration between LUMS and Erasmus Medical Center, Netherlands.
+        description: |
+          Collaborated with two LUMS professors on a research project with **Erasmus Medical Center (Netherlands)**
+          to compress high-dimensional functional ultrasound (fUS) brain imaging data using **Variational Autoencoders**.
+          Conducted extensive literature review, designed and trained VAE architectures, and analyzed reconstruction
+          fidelity vs. compression ratio tradeoffs.
+
+          *Tech Stack: Python, TensorFlow, Keras, NumPy, Matplotlib*
+
+      - layout: right
+        title: CSALT NLP Lab — LUMS
+        sub_title: NLP Research Intern
+        caption: Summer 2024
+        link: https://lums.edu.pk
+        quote: >
+          Computational Approaches to Language Technology Lab at LUMS.
+        description: |
+          Worked under my NLP professor reviewing previously rejected NLP conference papers, identifying
+          methodological weaknesses, and researching directions for improvement. Developed strong critical
+          reading and research synthesis skills across modern NLP topics.
+
+      - layout: right
+        title: LUMS — Lahore University of Management Sciences
+        sub_title: Teaching Assistant, CS-100 (Computational Problem Solving)
+        caption: Fall 2024
+        link: https://lums.edu.pk
+        quote: >
+          Instructor: Dr. Shafay Shumail
+        description: |
+          Assisted in delivering **CS-100**, LUMS's introductory programming course. Graded assignments,
+          conducted office hours, delivered tutorials, and supervised semester projects for a large cohort
+          of first-year students.
+
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        title: Lahore University of Management Sciences (LUMS)
+        sub_title: BSc Computer Science
+        caption: Aug 2022 – May 2026
+        link: https://lums.edu.pk
         quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          One of Pakistan's premier research universities, consistently ranked among the top institutions in South Asia.
+        description: |
+          Relevant Coursework: **Computer Vision, Machine Learning, Language Processing with Generative AI,
+          Deep Learning, Introduction to AI, Software Engineering, Cloud Computing, Data Mining, NLP**
+
+          Active in research from sophomore year onward, with two concurrent research internships completed in Summer 2024.
+
+  - title: Technical Skills
+    layout: text
+    content: |
+      **Languages:** Python, C/C++, JavaScript/TypeScript, Haskell, SQL
+
+      **ML / AI:** PyTorch, TensorFlow, Scikit-learn, OpenCV, CLIP, Pandas, NumPy, LangChain, Hugging Face
+
+      **Web:** React, Node.js, Express.js, MongoDB, Socket.IO, HTML/CSS
+
+      **Tools:** Docker, Git, SonarQube, Selenium, Postman, LaTeX, Azure, Oracle Cloud
+
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+    content: |
+      Outside of code and research, I'm a lifelong cricket fan — Virat Kohli's grit, consistency, and relentless
+      self-improvement are values I genuinely try to bring to my own work.
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      I'm also helping grow my family's surgical instruments export business (**AJT Surgicals**) out of Sialkot,
+      which has given me an unexpected education in international trade, certifications, and cold outreach.
+
+      I care about building things that actually work — not just prototypes. Whether that's a production AI system,
+      a cloud pipeline, or an export catalog, I like to see it through to something real.
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+remote_theme: sproogen/modern-resume-theme
 
 sass:
   sass_dir: _sass
