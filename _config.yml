@@ -10,8 +10,6 @@ name: Saadi Humayun
 title: CS Graduate | AI/ML Engineer | Software Engineer
 email: saadihumayun64@gmail.com
 phone: "+92 306 0363663"
-# website: https://saadihumayun.netlify.app
-# website_title: 3D Portfolio
 
 # Dark Mode (true/false/never)
 darkmode: true
@@ -29,8 +27,8 @@ additional_links:
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  I'm a final-year Computer Science student at **Lahore University of Management Sciences**, graduating May 2026,
-  with a strong interest in the intersection of **Software Engineering and AI technologies**, particularly AI integration,
+  I'm a final-year Computer Science student at **Lahore University of Management Sciences** and I will be graduating in May 2026. I have
+  a strong interest in the intersection of **Software Engineering and AI technologies**, particularly AI integration,
   intelligent automation, and research in emerging **Deep Learning and Generative AI** systems.
 
   I've built production-grade AI systems, contributed to deep learning research with Erasmus MC, and currently work
@@ -60,15 +58,15 @@ content:
           Implemented generation quality scoring tracking faithfulness, hallucination, inferred, and extrapolated
           claim rates with full precision/recall/F1 breakdown and per-run LLM cost estimation.
 
-          *Tech Stack: Python, LangChain, Gemini API, Groq API, Llama, pytest, Playwright, Oracle Cloud*
+          *Tech Stack: Python, Gemini API, Groq API, Llama, pytest, Playwright, Oracle Cloud*
 
       - layout: left
         border: weak
         title: Advanced Language Model Development and Optimization
         additional_links:
           - title: SmolLM — LoRA + DPO Fine-tuning
-            icon: fab fa-github
-            url: https://github.com/saadi54humayun
+            # icon: fab fa-github
+            # url: https://github.com/saadi54humayun
         quote: >
           Llama3-based LLM built from scratch with LoRA fine-tuning and Direct Preference Optimization.
         description: |
@@ -86,13 +84,13 @@ content:
         additional_links:
           - title: Deer Species Classification
             icon: fab fa-github
-            url: https://github.com/saadi54humayun
+            url: https://github.com/saadi54humayun/DL-Project
         quote: >
           Deep learning pipeline for fine-grained wildlife classification achieving 95% test accuracy.
         description: |
           Developed a deep learning pipeline for fine-grained deer species classification from the **Missouri Camera Trap
           dataset (LILA BC)**, achieving **95% test accuracy** — outperforming the ResNet50 baseline by 3%.
-          Used **MegaDetector** for automated animal detection and image cropping, reducing data processing time by 60%.
+          Used **MegaDetector** for automated animal detection and image cropping.
           Improved performance on underrepresented species by 15% through **Focal Loss** for class imbalance handling
           and a stacking ensemble classifier combining MLP and XGBoost with CLIP features.
 
@@ -104,7 +102,7 @@ content:
         additional_links:
           - title: CulinaryCloud
             icon: fab fa-github
-            url: https://github.com/saadi54humayun
+            url: https://github.com/SE-Group-Spring-25/SE_PROJECT
         quote: >
           MERN-stack recipe sharing platform with AI-driven recommendations and real-time features.
         description: |
@@ -136,7 +134,7 @@ content:
       - layout: right
         title: Erasmus MC × LUMS
         sub_title: Deep Learning Research Intern
-        caption: Summer 2024
+        caption: Summer 2025
         quote: >
           Research collaboration between LUMS and Erasmus Medical Center, Netherlands.
         description: |
@@ -150,8 +148,7 @@ content:
       - layout: right
         title: CSALT NLP Lab — LUMS
         sub_title: NLP Research Intern
-        caption: Summer 2024
-        link: https://lums.edu.pk
+        caption: Summer 2025
         quote: >
           Computational Approaches to Language Technology Lab at LUMS.
         description: |
@@ -160,7 +157,7 @@ content:
           reading and research synthesis skills across modern NLP topics.
 
       - layout: right
-        title: LUMS — Lahore University of Management Sciences
+        title: Lahore University of Management Sciences
         sub_title: Teaching Assistant, CS-100 (Computational Problem Solving)
         caption: Fall 2024
         link: https://lums.edu.pk
@@ -185,7 +182,6 @@ content:
           Relevant Coursework: **Computer Vision, Machine Learning, Language Processing with Generative AI,
           Deep Learning, Introduction to AI, Software Engineering, Cloud Computing, Data Mining, NLP**
 
-          Active in research from sophomore year onward, with two concurrent research internships completed in Summer 2024.
 
   - title: Technical Skills
     layout: text
@@ -201,14 +197,9 @@ content:
   - title: A Little More About Me
     layout: text
     content: |
-      Outside of code and research, I'm a lifelong cricket fan — Virat Kohli's grit, consistency, and relentless
-      self-improvement are values I genuinely try to bring to my own work.
-
-      I'm also helping grow my family's surgical instruments export business (**AJT Surgicals**) out of Sialkot,
-      which has given me an unexpected education in international trade, certifications, and cold outreach.
-
-      I care about building things that actually work — not just prototypes. Whether that's a production AI system,
-      a cloud pipeline, or an export catalog, I like to see it through to something real.
+      Outside of code and research, I'm a lifelong cricket fan with a deep love for the arts — reading philosophy
+      and poetry, and watching good films. There's something about sitting with a dense book or a well-crafted
+      movie that sharpens the way I think about everything else.
 
 # Footer
 footer_show_references: true
